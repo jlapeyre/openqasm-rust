@@ -6,17 +6,18 @@ repository = "https://github.com/jlapeyre/openqasm-rust"
 description = "openqasm reference parser using rust target"
 readme = "README.md"
 edition = "2018"
-license = "BSD-3-Clause"
+license = "Apache-2.0"
 exclude = ["/build.rs","/grammars","/templates"]
 
 [dependencies]
 antlr-rust = "0.3.0-beta"
+clap = { version = "4.0", features = ["derive"] }
 
 [lib]
+name="openqasm" 
 
-# This is not really worth much
-# [[bin]]
-# name = "testparse"
+[[bin]]
+name = "qasmparsedemo"
 
 #[[test]]
 #name = "my_test"
