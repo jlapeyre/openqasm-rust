@@ -14,8 +14,10 @@ provides a Rust target for ANTLR.
 
 ### Build
 
-Try `cargo build`. This builds a library and an exectuable for demonstration.
+Try `cargo build`. This builds a library and an exectuable for demonstration. This build
+includes debugging information in the library and the executable.
 
+Use `cargo build --release` to build a more performant version.
 
 ### Example
 
