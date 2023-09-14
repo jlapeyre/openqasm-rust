@@ -39,4 +39,16 @@ You can also run the demo directly like this
 ./target/debug/qasmparsedemo --action parse /path/to/your/qasm/program.qasm
 ```
 
+### Generating the library
+
+The [lexer and parser](./src/) were built by adding the third-party rust target to the
+ANTLR parser generator and using the commands
+```shell
+java -jar tool/target/antlr4-4.8-2-SNAPSHOT-complete.jar -Dlanguage=Rust -listener ./openqasm/qasm3Lexer.g4  ./openqasm/qasm3Parser.g4
+java -jar tool/target/antlr4-4.8-2-SNAPSHOT-complete.jar -visitor -Dlanguage=Rust ./openqasm/qasm3Lexer.g4  ./openqasm/qasm3Parser.g4
+```
+
+#### TODO
+
+I have not documented out to put together the ANTLR and the rust-target repos. That would be useful.
 
