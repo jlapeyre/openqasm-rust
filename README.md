@@ -12,6 +12,10 @@ Rust is not supported in the ANTLR distribution.
 Instead, this package depends on the [antlr4rust](https://github.com/rrevenantt/antlr4rust) crate, which
 provides a Rust target for ANTLR.
 
+### Build
+
+Try `cargo build`. This builds a library and an exectuable for demonstration.
+
 ### Status
 
 Just started.

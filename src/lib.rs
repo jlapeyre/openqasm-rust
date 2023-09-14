@@ -40,7 +40,6 @@ mod qasm3parservisitor;
 
 
 pub fn lexer_test_qasm3(qasm_file_path: &PathBuf) {
-//    let qasm_program = fs::read_to_string("qss-qasm-test/angle-theta.qasm")
     let qasm_program = fs::read_to_string(qasm_file_path)
         .expect("Unable to read file.");
     let mut _lexer = qasm3Lexer::new(InputStream::new(&*qasm_program));
