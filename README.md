@@ -34,7 +34,7 @@ cargo run --bin qasmparsedemo -- --action lex /path/to/your/qasm/program.qasm
 You can also run the demo directly like this
 
 ```shell
-./target/debug/qasmparsedemo -- --action parse /path/to/your/qasm/program.qasm
+./target/debug/qasmparsedemo --action parse /path/to/your/qasm/program.qasm
 ```
 
 
