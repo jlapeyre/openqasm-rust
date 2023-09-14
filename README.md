@@ -16,7 +16,25 @@ provides a Rust target for ANTLR.
 
 Try `cargo build`. This builds a library and an exectuable for demonstration.
 
-### Status
 
-Just started.
+### Example
+
+To run the example program via `cargo`, do this
+
+```shell
+cargo run --bin qasmparsedemo -- --action parse /path/to/your/qasm/program.qasm
+```
+
+or
+
+```shell
+cargo run --bin qasmparsedemo -- --action lex /path/to/your/qasm/program.qasm
+```
+
+You can also run the demo directly like this
+
+```shell
+./target/debug/qasmparsedemo -- --action parse /path/to/your/qasm/program.qasm
+```
+
 
